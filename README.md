@@ -70,21 +70,22 @@ clears form -->
 ### Task 3: Print Project Data to Page
 
 1. Create a function that will read the saved projects from localStorage.
-
+<!-- pull from local storage-->
 2. Create a table row (`<tr>`) element and save it to a variable.
-
+<!-- jquery row-->
 3. If the project is past due, give the row a class so that the row for the project will have a light red background. If the project is due today, give the row a class so that the row will have a light yellow background.
-
+<!-- DayJS to connect time due to current time/date-->
+<!--Modify classes accordingly-->
 4. Create a table detail (`<td>`) element for each of the corresponding project fields in Task 1.
-
+<!---Use JQUERY to create new element-->
 5. Append each `<td>` element to the `<tr>`.
-
+<!---Use JQUERY to append (.append)-->
 6. Append each `<tr>` to the `<tbody>` element on the page.
-
+<!---Use JQUERY to append (.append)-->
 7. Don't forget to clear the `<tbody>` before adding all the rows.
-
+<!---Clear <tbody> ?-->
 8. Add a call to the function when the page loads.
-
+<!---Call function in code-->
 9. Update the function responsible for capturing form data so that it calls the function for printing the data.
 
 ---
@@ -92,10 +93,10 @@ clears form -->
 ### Task 4: Delete a Project From the Table
 
 1. Update the table to accommodate one more column without a name.
-
+<!--Create a new column-->
 2. When generating a new `<tr>` for a project, add one more `<td>` that holds a button for deleting a project from the list.
-
+<!---Add delete button to each listitem-->
 3. Use jQuery event delegation to attach an event listener to each of those buttons so that when clicked, the parent `<tr>` element will be removed from the page and the project is removed from localStorage. (HINT: How might using a data-* attribute be helpful?)
-
+<!---USE eventlistener to delete--->
 ---
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
